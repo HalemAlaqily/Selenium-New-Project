@@ -1,4 +1,4 @@
-package tests.Excel.AssignmentsPackage;
+package tests.AssignmentsTestNG.AssignmentsPackage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

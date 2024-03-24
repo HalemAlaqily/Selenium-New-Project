@@ -1,4 +1,4 @@
-package tests.Excel.AssignmentsPackage;
+package tests.AssignmentsTestNG.AssignmentsPackage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

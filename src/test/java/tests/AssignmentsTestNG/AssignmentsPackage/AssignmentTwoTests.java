@@ -1,4 +1,4 @@
-package tests.Excel.AssignmentsPackage;
+package tests.AssignmentsTestNG.AssignmentsPackage;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;

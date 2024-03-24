@@ -1,4 +1,4 @@
-package tests.Excel.AssignmentsPackage;
+package tests.AssignmentsTestNG.AssignmentsPackage;
 import engine.ActionsBot;
 
 import engine.PropertiesReader;

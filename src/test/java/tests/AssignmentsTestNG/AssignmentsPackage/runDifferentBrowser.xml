@@ -4,21 +4,21 @@
     <test name="Chrome Test">
         <parameter name="target-browser" value="chrome"/>
         <classes>
-            <class name="tests.Excel.AssignmentsPackage.AssignmentTwoTests"/>
+            <class name="tests.AssignmentsTestNG.AssignmentsPackage.AssignmentTwoTests"/>
         </classes>
     </test>
 
     <test name="Firefox Test">
         <parameter name="target-browser" value="firefox"/>
         <classes>
-            <class name="tests.Excel.AssignmentsPackage.AssignmentTwoTests"/>
+            <class name="tests.AssignmentsTestNG.AssignmentsPackage.AssignmentTwoTests"/>
         </classes>
     </test>
 
     <test name="Edge Test">
         <parameter name="target-browser" value="edge"/>
         <classes>
-            <class name="tests.Excel.AssignmentsPackage.AssignmentTwoTests"/>
+            <class name="tests.AssignmentsTestNG.AssignmentsPackage.AssignmentTwoTests"/>
         </classes>
     </test>
 
