@@ -21,6 +21,7 @@ public void toDoAppTest(){
     check4.click();
     check5.click();
 
+
     //If both clicks worked, then the following List should be have length 2.
     By checkedList = By.xpath("//span[@class='done-true']");
     int liSize1 = driver.findElements(checkedList ).size();
