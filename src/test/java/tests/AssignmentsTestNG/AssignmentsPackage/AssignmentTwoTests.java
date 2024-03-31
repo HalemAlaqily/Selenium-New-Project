@@ -4,6 +4,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
 import java.io.FileInputStream;
@@ -16,10 +17,12 @@ Run it with 3 different browsers using XML file
 Run it parallel with 3 threads
  */
 public class AssignmentTwoTests extends Tests{
+
+    WebDriver driver;
     @DataProvider(name = "excelData")
     public Object[][] excelDataProvider() throws IOException {
 
-        Object[][] arrObj = getExcelData("C:/Users/LENOVO/Downloads/testDescription.xlsx","Sheet1");
+        Object[][] arrObj = getExcelData("src/test/java/tests/Excel/testDescription.xlsx","Sheet1");
         return arrObj;
 
     }
