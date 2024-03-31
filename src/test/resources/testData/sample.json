@@ -3,5 +3,24 @@
   "SoftAssertionTestData": {
   "Username": "student",
 "Password": "Password123"
+  },
+  "SauceDemoLoginTestData": {
+    "username": "standard_user",
+    "lockedUsername": "locked_out_user",
+    "problemUsername": "problem_user",
+    "password": "secret_sauce"
+  },
+  "expandtestingData": {
+    "username": "practice",
+    "password": "SuperSecretPassword!",
+    "wrongPassword": "password"
+  },
+  "Playground": {
+    "firstName": "Halema",
+    "lastName": "Alaqily",
+    "email": "halemaalaqily@gmail.com",
+    "telephone": "0501542802",
+    "password": "a4TW@fawKi6yftH",
+    "confirmPassword": "a4TW@fawKi6yftH"
   }
 }

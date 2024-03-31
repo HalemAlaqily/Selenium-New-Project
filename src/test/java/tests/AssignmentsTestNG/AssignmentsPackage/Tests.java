@@ -1,6 +1,8 @@
 package tests.AssignmentsTestNG.AssignmentsPackage;
-import engine.ActionsBot;
 
+
+import engine.ActionsBot;
+import engine.CustomeListner;
 import engine.PropertiesReader;
 import io.qameta.allure.Step;
 import org.apache.logging.log4j.LogManager;
@@ -14,6 +16,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
@@ -34,10 +37,10 @@ public abstract class Tests {
     @Step("Initializing test data and properties")
     @BeforeClass
     public static void globalSetup() throws IOException, ParseException {
-        Configurator.initialize(null, "src/main/resources/properties/log4j2.properties");
+        Configurator.initialize(null, "src/main/resources/confg/log4j2.properties");
         logger = LogManager.getLogger(Tests.class.getName());
         testData =  (JSONObject) new JSONParser().parse( new FileReader("src/test/resources/testData/sample.json", StandardCharsets.UTF_8) );
-        PropertiesReader.readPropertyFile("src/main/resources/properties/configuration.properties");
+        PropertiesReader.readPropertyFile("src/main/resources/confg/configuration.properties");
     }
 
     @Step("Initializing target browser")
@@ -54,7 +57,7 @@ public abstract class Tests {
             case "edge" -> driver = new EdgeDriver();
         }
 
-
+        driver = new EventFiringDecorator(new CustomeListner()).decorate(driver);
 
         driver.manage().window().maximize();
 
