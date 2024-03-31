@@ -19,7 +19,7 @@ public class RegisterPage extends FatherPage{
         super(driver,bot);
     }
     @Step
-    public LogoutPage register (String firstName,
+    public RegisterPage register (String firstName,
                                   String lastName,
                                   String email,
                                   String telephone ,
@@ -36,7 +36,7 @@ public class RegisterPage extends FatherPage{
         bot.click(SubscribeRadioBtn);
         bot.click(PrivacyPoliceBtn);
         bot.click(loginBtn);
-        return new LogoutPage(driver,bot);
+        return new RegisterPage(driver,bot);
     }
     /*public LogoutPage logout(){
         bot.click(logout);

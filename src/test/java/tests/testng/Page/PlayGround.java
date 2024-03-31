@@ -1,7 +1,6 @@
 package tests.testng.Page;
-import PagesPackge.HomePage;
+import PagesPackge.RegisterPage;
 import org.json.simple.JSONObject;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import tests.testng.Tests;
 
@@ -15,8 +14,8 @@ public class PlayGround extends Tests {
         String telephone = (String)testCaseData.get("telephone");
         String password = (String)testCaseData.get("password");
         String confirmPassword = (String)testCaseData.get("confirmPassword");
-        new HomePage(driver,bot).goTo().Register().register(firstName,
-                lastName,email,telephone, password,confirmPassword).logoutBtn();
+        new RegisterPage(driver,bot).register(firstName,
+                lastName,email,telephone, password,confirmPassword);
 
     }
 }
